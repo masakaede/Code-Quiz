@@ -18,7 +18,7 @@
 <body>
     <header class="container-fluid fixed-top">
         <div class="row">
-            <div class="highscore col">View Hightscores</div>
+            <div class="high-score col">View Hightscores</div>
             <div class="time col text-right"></div>
         </div>
     </header>
@@ -26,69 +26,69 @@
         <div class="card">
             <div class="card-body">
 
-                <section class="row start-page justify-content-md-center text-center ">
+                <section class="row start-page justify-content-md-center text-center">
                     <h1>Coding Quiz Challenge</h1>
                     <p>Try to answer the folllowing code-related questions with the time limit. Keep in mind that
                         incorrect answers will penalize your scoretime by ten seconds.</p>
                     <button class="start-quiz">Start Quiz</button>
                 </section>
 
-                <section class="q-1-page question-page">
+                <section class="q-1-page question-page" style="display: none;">
                     <h1 class="question">Q1. What are people who write computer code called?</h1>
 
-                    <div class="answers">
-                        <button class="answerBtn btn-1 correctAnswer">1. Programmers</button>
-                        <button class="answerBtn btn-2 wrongAnswer">2. Cryptographers</button>
-                        <button class="answerBtn btn-3 wrongAnswer">3. Professors</button>
-                        <button class="answerBtn btn-4 wrongAnswer">4. Manufacturers</button>
+                    <div>
+                        <button class="q-1 correctAnswer">1. Programmers</button>
+                        <button class="q-1 wrongAnswer">2. Cryptographers</button>
+                        <button class="q-1 wrongAnswer">3. Professors</button>
+                        <button class="q-1 wrongAnswer">4. Manufacturers</button>
                         <div>
                 </section>
 
-                <section class="q-2-page question-page">
+                <section class="q-2-page question-page" style="display: none;">
                     <h1 class="question">Q2. Which of the following deos NOT run using a computer program?</h1>
 
-                    <div class="answers">
-                        <button class="correctAnswer">1. Bicycle</button>
-                        <button class="wrongAnswer">2. Train</button>
-                        <button class="wrongAnswer">3. Rocket</button>
-                        <button class="wrongAnswer">4. Car</button>
+                    <div>
+                        <button class="q-2 correctAnswer">1. Bicycle</button>
+                        <button class="q-2 wrongAnswer">2. Train</button>
+                        <button class="q-2 wrongAnswer">3. Rocket</button>
+                        <button class="q-2 wrongAnswer">4. Car</button>
                         <div>
                 </section>
 
-                <section class="q-3-page question-page">
+                <section class="q-3-page question-page" style="display: none;">
                     <h1 class="question">Q3. Which of the following is NOT a programming language?</h1>
 
-                    <div class="answers">
-                        <button class="wrongAnswer">1. Java</button>
-                        <button class="wrongAnswer">2. Python</button>
-                        <button class="correctAnswer">3. Banana</button>
-                        <button class="wrongAnswer">4. Ruby</button>
+                    <div>
+                        <button class="q-3 wrongAnswer">1. Java</button>
+                        <button class="q-3 wrongAnswer">2. Python</button>
+                        <button class="q-3 correctAnswer">3. Banana</button>
+                        <button class="q-3 wrongAnswer">4. Ruby</button>
                         <div>
                 </section>
 
-                <section class="q-4-page question-page">
+                <section class="q-4-page question-page" style="display: none;">
                     <h1 class="question">Q4. Which if the following is a programming language?</h1>
 
-                    <div class="answers">
-                        <button class="wrongAnswer">1. Bite</button>
-                        <button class="wrongAnswer">2. Gnaw</button>
-                        <button class="wrongAnswer">3. Itch</button>
-                        <button class="correctAnswer">4. Scratch</button>
+                    <div>
+                        <button class="q-4 wrongAnswer">1. Bite</button>
+                        <button class="q-4 wrongAnswer">2. Gnaw</button>
+                        <button class="q-4 wrongAnswer">3. Itch</button>
+                        <button class="q-4 correctAnswer">4. Scratch</button>
                         <div>
                 </section>
 
-                <section class="q-5-page question-page">
+                <section class="q-5-page question-page" style="display: none;">
                     <h1 class="question">Q5. What is computer coding?</h1>
 
-                    <div class="q-5-answers">
-                        <button class="final-q wrongAnswer">1. A TV show</button>
-                        <button class="final-q correctAnswer">2. Telling a computer what to do</button>
-                        <button class="final-q wrongAnswer">3. A radio show</button>
-                        <button class="final-q wrongAnswer">4. A list of function</button>
+                    <div>
+                        <button class="q-5 wrongAnswer">1. A TV show</button>
+                        <button class="q-5 correctAnswer">2. Telling a computer what to do</button>
+                        <button class="q-5 wrongAnswer">3. A radio show</button>
+                        <button class="q-5 wrongAnswer">4. A list of function</button>
                         <div>
                 </section>
 
-                <section class="all-done-page ">
+                <section class="all-done-page" style="display: none;">
                     <h1 class="">All done!</h1>
 
                     <p class="final-score" style="display: block;"></p>
@@ -102,8 +102,8 @@
                     </form>
                 </section>
 
-                <section class="highscores-page ">
-                    <h1 class="">Highscores</h1>
+                <section class="highscores-page" style="display: none;">
+                    <h1>Highscores</h1>
                     <form id="highscores-form" method="POST">
 
                     </form>
