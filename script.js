@@ -1,13 +1,16 @@
+//4 pages
 var startPageEl = document.querySelector(".start-page");
 var qPageEl = document.querySelector(".question-page");
+var allDonePageEl = document.querySelector(".all-done-page");
+var highscoresPageEl = document.querySelector(".highscores-page");
+//question page
 var questionEl = document.querySelector(".question");
 var aButtonEl = document.querySelector(".answer-button");
 var button1El = document.querySelector(".answer-button-1");
 var button2El = document.querySelector(".answer-button-2");
 var button3El = document.querySelector(".answer-button-3");
 var button4El = document.querySelector(".answer-button-4");
-var allDonePageEl = document.querySelector(".all-done-page");
-var highscoresPageEl = document.querySelector(".highscores-page");
+
 var responseEl = document.querySelector(".response");
 var finalScoreEl = document.querySelector(".final-score");
 var highscoreEl = document.querySelector(".high-score");
@@ -145,6 +148,7 @@ highscoreEl.addEventListener("click", function (event) {
     event.preventDefault();
     startPageEl.setAttribute("style", "display : none");
     qPageEl.setAttribute("style", "display : none");
+    allDonePageEl.setAttribute("style", "display : none");
     highscoresPageEl.removeAttribute("style", "display : none");
     responseEl.textContent = ""
     clearInterval(timerInterval)
